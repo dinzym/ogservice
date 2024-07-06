@@ -53,7 +53,7 @@
                             </div>
 
                             <div class="form-group last mb-4">
-                                <label for="password">Password</label>
+                                <label for="password" >Password</label>
                                 <input type="password" class="form-control" name="password" required autocomplete="current-password">
 
                             </div>
@@ -84,7 +84,7 @@
                             {{--                            </div>--}}
                             <hr>
                             <div class="text-center">
-                                <a class="text-sm" href="{{ route('register') }}">Create an Account!</a>
+                                <a class="text-sm text-primary" href="{{ route('register') }}">Create an Account!</a>
                                 <div class="flex items-center justify-end mt-2">
 {{--                                    @if (Route::has('password.request'))--}}
 {{--                                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">--}}

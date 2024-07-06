@@ -1,4 +1,4 @@
-@extends('admin.admin_master')
+    @extends('admin.admin_master')
 @section('admin')
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -169,17 +169,17 @@
 
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Customer</h1>
+                <h1 class="h3 mb-2 text-gray-800" >Customer id = {{$user->id}}</h1>
                 <p class="mb-4">Manage Customer Data with Advanced Admin Controls </p>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Customer</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Customer id = {{$user->id}}</h6>
                     </div>
                     <div class="card-body">
 
-                        <form action="{{ route('customer.update'. $user->id) }}" method="POST">
+                        <form action="{{ route('customer.update', $user->id) }}" method="POST">
                             @csrf
                             @method('put')
                             <div class="form-group last mb-4">
@@ -196,12 +196,12 @@
 
                             <div class="form-group last mb-4">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" name="password" value="{{$user->password}}">
+                                <input type="password" class="form-control" name="password" value="{{$user->password}}" disabled >
 
                             </div>
                             <div class="form-group last mb-4">
                                 <label for="Confirm Password">Created Since</label>
-                                <input type="password" class="form-control" name="created_at" value="{{$user->created_at}}">
+                                <input type="text" class="form-control" name="created_at" value="{{$user->created_at}}" disabled >
 
                             </div>
                             <button type="submit" class="btn-block btn-primary" >Update</button>
@@ -214,7 +214,7 @@
         </div>
         <!-- /.container-fluid -->
 
-    </div>
+
 
     <!-- /.container-fluid -->
 
@@ -229,6 +229,9 @@
             </div>
         </div>
     </footer>
+
+    </div>
+
     <!-- End of Footer -->
 
 

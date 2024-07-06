@@ -86,7 +86,7 @@
 {{--                            </div>--}}
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="{{route('booster.register')}}">Create an Account!</a>
+                                <a class="small text-primary" href="{{route('booster.register')}}">Create an Account!</a>
                             </div>
                         </form>
                     </div>

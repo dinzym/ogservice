@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Online Gaming Service</title>
+    <title>Online Service Gaming </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
 <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="{{route('booster.dashboard')}}">Online Gaming Service</a></h1>
+        <h1 class="logo me-auto"><a href="{{url('/')}}">Online Service Gaming </a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -100,15 +100,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                <h1>Better Solutions For Your Business</h1>
-                <h2>We are team of talented designers making websites with Bootstrap</h2>
+                <h1>Level Up Your Gaming Experience</h1>
+                <h2 class="text-dark fw-bolder">Choose Your Gaming Life Path</h2>
                 <div class="d-flex justify-content-center justify-content-lg-start">
-                    <a href="#" class="btn-get-started scrollto">Get Started</a>
-                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    <a href="{{route('booster_login_form')}}" class="btn-get-started scrollto text-dark fw-bolder">Booster</a>&nbsp;
+                    <a href="{{ route('login') }}" class="btn-get-started scrollto text-dark fw-bolder ">Gamer</a>
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="{{asset('boostercs/Arsha/assets/img/hero-img.png')}}" class="img-fluid animated" alt="">
+                <img src="{{asset('page10.png')}}" class="img-fluid animated" alt="">
             </div>
         </div>
     </div>
@@ -117,39 +117,264 @@
 
 <main id="main">
 
-    @yield('content')
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients section-bg">
+            <div class="container">
+
+                @if(Session::has('error'))
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>{{session::get('error')}}</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
+                    <div class="row" data-aos="zoom-in">
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="https://www.svgrepo.com/download/303639/counter-strike-global-offensive-2-logo.svg" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1280px-Valorant_logo_-_pink_color_version.svg.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="https://www.fifplay.com/img/public/fifa-23-logo-alt-2.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="https://seeklogo.com/images/A/apex-logo-F74B0C9FCD-seeklogo.com.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="https://www.vhv.rs/dpng/d/412-4121757_call-of-duty-warzone-no-recoil-macro-call.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Overwatch_2_full_logo.svg/2560px-Overwatch_2_full_logo.svg.png" class="img-fluid" alt="">
+                        </div>
+
+                    </div>
+
+            </div>
+        </section><!-- End Cliens Section -->
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>About Us</h2>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+
+
+                        <p>
+                            Welcome to our system, your ultimate destination for online services gaming . At Online Service Gaming ,
+                            we are passionate about delivering an exceptional gaming experience to our users.
+                            With a dedicated team of gaming enthusiasts, developers, and industry experts,
+                            we strive to provide a platform that connects gamers from all walks of life.
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> Connect, compete, and interact with like-minded individuals.</li>
+                            <li><i class="ri-check-double-line"></i> Focus on innovation, quality, and customer satisfaction.</li>
+                            <li><i class="ri-check-double-line"></i> Stay at the forefront of the gaming industry.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            We are dedicated to providing you with an exceptional gaming experience and look forward to being a part of your gaming journey.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us section-bg">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+                        <div class="content">
+                            <h3><strong>We pride ourselves on delivering an unparalleled gaming experience</strong></h3>
+                            <p>
+                                At Online Service Gaming , we understand that you have numerous choices when it comes to Online Service Gaming .
+                            </p>
+                        </div>
+
+                        <div class="accordion-list">
+                            <ul>
+                                <li>
+                                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Wide range of high-quality games for every preference and skill level. <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                                        <p>
+                                            With a robust and secure platform, we offer a wide range of high-quality games to suit every preference and skill level.
+                                            Our dedicated team of gaming experts continually curates and updates our game library to ensure you have access to the latest and most exciting titles.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Thriving community of passionate gamers for a sense of belonging. <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                                        <p>
+                                            Our thriving community of passionate gamers fosters a sense of belonging and camaraderie, making your gaming journey all the more enjoyable.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Innovation, quality, and commitment to gaming satisfaction. <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                                        <p>
+                                            Choose Online Service Gaming  for an unmatched gaming adventure that combines innovation, quality, and a commitment to your gaming satisfaction.
+                                        </p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("{{asset('boostercs/Arsha/assets/img/why-us.png')}}");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+                </div>
+
+            </div>
+        </section><!-- End Why Us Section -->
+
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <p>At Online Service Gaming , we are committed to providing exceptional gaming services that cater to your every need.
+                        Our range of services is designed to enhance your gaming experience,
+                        foster community engagement, and ensure seamless gameplay.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <h4><a href="">Diverse Game Library</a></h4>
+                            <p>Explore our extensive collection of top-quality games,
+                                ranging from popular titles to indie gems, ensuring there's something for every gamer.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4><a href="">Regular Updates</a></h4>
+                            <p>Stay at the forefront of gaming trends with regular updates and additions to our game library, ensuring fresh and exciting content.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-tachometer"></i></div>
+                            <h4><a href="">Reliable Servers</a></h4>
+                            <p>Enjoy uninterrupted gameplay with our robust server infrastructure, providing a stable and lag-free gaming environment.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="">24/7 Support</a></h4>
+                            <p>Our dedicated support team is available round the clock to assist you with any inquiries or technical issues you may encounter.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Services Section -->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h3 style="color: #01FFFF;">Call To Action</h3>
+                        <p> Ready to level up your gaming experience? Join Online Service Gaming  today and unlock a world of excitement, competition, and camaraderie.
+                            Explore our vast collection of top-quality games, engage with a passionate community of gamers, and immerse yourself in thrilling gameplay.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="{{route('register')}}">Sign Up Now!</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Cta Section -->
+
+
+
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Team</h2>
+                    <p>Meet Our Talented Team - The Driving Force Behind Our Success.</p>
+                </div>
+
+                <div class="row justify-content-lg-center">
+
+                    <div class="col-lg-6 " data-aos="zoom-in" data-aos-delay="100">
+                        <div class="member d-flex align-items-center  ">
+                            <div class="pic"><img src="{{asset('page9.jpeg')}}" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Nuruddin Zaim bin Azahar</h4>
+                                <span>Chief Executive Officer</span>
+                                <p>Bachelor in Computer Science (Software Engineering)</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/udin_azahar" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://www.facebook.com/din.azahar.1/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://www.instagram.com/din.zym/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/nuruddin-zaim-057133166/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Team Section -->
+
+
+
 
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
-    <div class="footer-newsletter">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h4>Join Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="footer-top">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3>Online Gaming Service</h3>
+                    <h3>Online Service Gaming </h3>
                     <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
+                        Universiti Tenaga Nasional (UNITEN)<br>
+                        Putrajaya Campus Jalan Kajang - Puchong<br>
+                        43000 Kajang, Selangor<br><br>
+                        <strong>Phone:</strong> +6012-497-0301<br>
+                        <strong>Email:</strong> udinazahar32100@gmail.com<br>
                     </p>
                 </div>
 
@@ -157,33 +382,27 @@
                     <h4>Useful Links</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Games</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Booster</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Our Social Networks</h4>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                    <p>Follow for more updates on social media</p>
                     <div class="social-links mt-3">
-                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://twitter.com/udin_azahar" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.facebook.com/din.azahar.1/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com/din.zym/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nuruddin-zaim-057133166/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -193,15 +412,15 @@
 
     <div class="container footer-bottom clearfix">
         <div class="copyright">
-            &copy; Copyright <strong><span>Online Gaming Service</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Online Service Gaming </span></strong>. All Rights Reserved
         </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+{{--        <div class="credits">--}}
+{{--            <!-- All the links in the footer should remain intact. -->--}}
+{{--            <!-- You can delete the links only if you purchased the pro version. -->--}}
+{{--            <!-- Licensing information: https://bootstrapmade.com/license/ -->--}}
+{{--            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->--}}
+{{--            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>--}}
+{{--        </div>--}}
     </div>
 </footer><!-- End Footer -->
 

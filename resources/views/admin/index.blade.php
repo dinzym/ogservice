@@ -8,7 +8,7 @@
         <div class="sidebar-brand-icon rotate-n-0">
             <i class="fas fa-user-lock"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">OGService Admin</div>
+        <div class="sidebar-brand-text mx-3">OSGaming Admin</div>
     </a>
 
     <!-- Divider -->
@@ -710,7 +710,7 @@
     <footer class="sticky-footer bg-white">
         <div class="container my-auto" style="padding-top: 20%">
             <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Online Gaming Service 2022</span>
+                <span>Copyright &copy; Online Service Gaming  2022</span>
             </div>
         </div>
     </footer>

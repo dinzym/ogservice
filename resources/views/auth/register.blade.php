@@ -70,7 +70,7 @@
                             <input type="submit" value="Sign Up" class="btn btn-block btn-primary">
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="{{ route('login') }}">Already Have an Account?</a>
+                                <a class="small text-primary" href="{{ route('login') }}">Already Have an Account?</a>
                             </div>
 
                         </form>

@@ -193,6 +193,7 @@
                                     </thead>
                                     <tbody>
                                     @foreach ($users as $user)
+
                                    <tr>
 
                                            <td>{{ $user->id }}</td>
@@ -201,22 +202,20 @@
                                            <td>{{ $user->password }}</td>
                                            <td>{{ $user->created_at }}</td>
                                        <td>
-                                           <form action="" method="POST">
+                                           <form action="{{route('customer.edit', $user->id)}}" method="POST">
                                                @csrf
                                                @method('PUT')
                                                <button class="btn-block btn-primary " type="submit"><i class="far fa-edit"> Edit</i></button>
                                            </form>
-{{--                                           <a href=""><i class="far fa-edit"> Edit</i></a>--}}
+
                                        </td>
                                        <td>
-                                           <form action="" method="POST">
-                                           @csrf
-                                           @method('DELETE')
-                                           <button class="btn-block btn-danger" type="submit"> <i class="fas fa-times-circle">Delete</i></button>
-                                           </form>
+                                           <button class="btn-block btn-danger"> <a href="{{ route('customer.confirm-delete', $user->id) }}" class="text-light"><i class="fas fa-times-circle">Delete</i></a></button>
+
                                        </td>
                                    </tr>
-                                    @endforeach
+                                        @endforeach
+
                                     </tbody>
                                 </table>
                             </div>

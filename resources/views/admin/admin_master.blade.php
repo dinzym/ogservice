@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
 
 
-    <title>Online Gaming Service Admin</title>
+    <title>Online Service Gaming  Admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('dashb/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">

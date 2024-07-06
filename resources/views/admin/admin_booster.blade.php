@@ -188,7 +188,7 @@
                                         <th>Password</th>
                                         <th>Start date</th>
                                         <th>Action</th>
-                                        <th>Action</th>
+                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -201,19 +201,14 @@
                                             <td>{{ $boosters->password }}</td>
                                             <td>{{ $boosters->created_at }}</td>
                                             <td>
-                                                <form action="" method="POST">
+                                                <form action="{{route('booster.edit', $boosters->id)}}" method="POST">
                                                     @csrf
                                                     @method('PUT')
                                                     <button class="btn-block btn-primary " type="submit"><i class="far fa-edit"> Edit</i></button>
                                                 </form>
-                                                {{--                                           <a href=""><i class="far fa-edit"> Edit</i></a>--}}
                                             </td>
                                             <td>
-                                                <form action="" method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button class="btn-block btn-danger" type="submit"> <i class="fas fa-times-circle">Delete</i></button>
-                                                </form>
+                                                <button class="btn-block btn-danger"> <a href="{{ route('booster.confirm-delete', $boosters->id) }}" class="text-light"><i class="fas fa-times-circle">Delete</i></a></button>
                                             </td>
                                         </tr>
                                         @endforeach

@@ -57,16 +57,22 @@
 
                             </div>
                             <div class="form-group last mb-4">
-                                <label for="Confirm Password">Confirm Password</label>
+                                <label for="Confirm Password">Confirm-Password</label>
                                 <input type="password" class="form-control" name="password_confirmation" required>
 
                             </div>
+
+{{--                            <div class="form-group last mb-4">--}}
+{{--                                <label for="Confirm Password">Game Service</label>--}}
+{{--                                <input type="" class="form-control" name="game_service" required>--}}
+
+{{--                            </div>--}}
 
                             <input type="submit" value="Sign Up" class="btn btn-block btn-primary">
                             <hr>
                         </form>
                         <div class="text-center">
-                            <a class="small" href="{{route('booster_login_form')}}">Already Have an Account?</a>
+                            <a class="small text-primary" href="{{route('booster_login_form')}}">Already Have an Account?</a>
                         </div>
                     </div>
                 </div>

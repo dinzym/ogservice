@@ -199,7 +199,7 @@
                                            <td>{{ $user->id }}</td>
                                            <td>{{ $user->name }}</td>
                                            <td>{{ $user->email }}</td>
-                                           <td>{{ $user->password }}</td>
+                                           <td>*********</td>
                                            <td>{{ $user->created_at }}</td>
                                        <td>
                                            <form action="{{route('customer.edit', $user->id)}}" method="POST">

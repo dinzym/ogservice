@@ -198,7 +198,7 @@
                                             <td>{{ $boosters->id }}</td>
                                             <td>{{ $boosters->name }}</td>
                                             <td>{{ $boosters->email }}</td>
-                                            <td>{{ $boosters->password }}</td>
+                                            <td>*********</td>
                                             <td>{{ $boosters->created_at }}</td>
                                             <td>
                                                 <form action="{{route('booster.edit', $boosters->id)}}" method="POST">

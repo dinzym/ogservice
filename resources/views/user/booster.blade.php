@@ -118,8 +118,8 @@
                     <div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style="background-image: url(page8.png);">
                     </div>
                     <div class="p-4 md:p-5">
-                        <p class="font-bold text-xl md:text-2xl">Booster = "{{ $loop->iteration }}"</p>
-                        <p class="text-gray-700 md:text-lg">{{ $boosters->name }}</p>
+                        <p class="font-bold text-xl md:text-2xl">Booster {{ $boosters->name }}</p>
+                        <!-- <p class="text-gray-700 md:text-lg">{{ $boosters->name }}</p> -->
                         <div class="text-lg text-gray-700"><span class="text-gray-900 font-bold">Email: </span> {{ $boosters->email }}</div>
                         <div class="text-lg text-gray-700"><span class="text-gray-900 font-bold">Joined Since: </span> {{ $boosters->created_at }}</div>
                         <div class="sm:flex sm:justify-between sm:items-center">

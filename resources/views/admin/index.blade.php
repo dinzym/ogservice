@@ -539,7 +539,7 @@
                                                 <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
                                                      src="{{asset('page5.png')}}" alt="...">
                                             </div>
-                                            <p>An existance customer details. Click below to view customer's details!</p>
+                                            <p class="text-center">Click below to view customer's details!</p>
                                             <button class="btn-block btn-primary " ><a href="{{route('admin.customer')}}" style="text-decoration: none; color: whitesmoke">Customer's Details</a></button>
                                         </div>
                                     </div>
@@ -551,12 +551,12 @@
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary">Booster</h6>
                             </div>
-                            <div class="card-body py-lg-4">
+                            <div class="card-body">
                                 <div class="text-center">
                                     <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
                                          src="{{asset('page7.png')}}" alt="...">
                                 </div>
-                                <p>An existance booster details. Click below to view booster's details!</p>
+                                <p class="text-center">Click below to view booster's details!</p>
                                 <button class="btn-block btn-primary"><a href="{{route('admin.booster')}}" style="text-decoration: none; color: whitesmoke">Booster's Details</a></button>
                             </div>
                         </div>
